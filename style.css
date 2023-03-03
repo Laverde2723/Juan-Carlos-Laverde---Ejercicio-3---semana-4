@@ -5,15 +5,15 @@
 }
 
 :root{
-    --white: #fafafa;
-    --purple: #9a67ea;
-    --blue-light: #04d4c3;
-    --blue-dark: #2a73c2;
-    --green: #2c7b90;
+    --white: #fffffc;
+    --Red: #400918;
+    --red-dark: #8f092a;
+    --brown-light: #d99f7e;
+    --brown-dark: #a65e44;
 }
 
 body{
-    background: linear-gradient(to bottom, var(--purple), var(--blue-light));
+    background: linear-gradient(to bottom, var(--Red), var(--red-dark));
     height: 100vh;
     font-family: 'Nunito', sans-serif ;
 }
@@ -64,12 +64,13 @@ body{
     border-radius: 8px;
     border: none;
     background-color: var(--white);
+    opacity: 50%;
 
 }
 
 .agregar-tarea i{
     font-size: 50px;
-    color: var(--purple);
+    color: var(--Red);
 
 }
 
@@ -80,7 +81,7 @@ body{
 
 .agregar-tarea input::placeholder{
     font-size: 1.1rem;
-    color: var(--purple);
+    color: var(--Red);
 }
 
 /*SECCION TAREA*/
@@ -92,13 +93,15 @@ body{
 
 .seccion-tarea li{
     display: flex;
-    background: linear-gradient(to bottom, var(--blue-dark), var(--green));
+    background: linear-gradient(to bottom, var(--brown-light), var(--brown-dark));
     border-radius: 15px;
     padding: 10px;
     align-items: center;
     justify-content: space-between;
     margin: 5px 0;
     color: var(--white);
+    filter: drop-shadow(0px 0px 10px rgb(89,25,2));
+    
 
 }
 
@@ -109,7 +112,7 @@ body{
 }
 
 .seccion-tarea i:hover{
-    color: var(--blue-light);
+    color: var(--red-dark);
     cursor: pointer;
 }
 
@@ -120,5 +123,5 @@ body{
 
 .line-through{
     text-decoration: line-through;
-    color: var(--blue-light);
+    color: var(--red-dark);
 }
